@@ -1,0 +1,70 @@
+<ion-header>
+ <ion-navbar text-center hideBackButton>
+    <img src="assets/images/banner.png"/>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+<ion-grid margin-vertical>
+
+<ion-row no-padding>
+<ion-col>
+
+<form [formGroup]="form">
+<ion-list>
+  
+   <ion-item no-lines>
+  <p text-center class="page_title">Track CN History</p>
+</ion-item>
+   
+ <ion-item>
+   
+    <ion-label stacked>Scan an item or enter CN number manually</ion-label>
+     <ion-input  [(ngModel)]="cnSearch.cnNumber" formControlName="cnNumber" type="text"></ion-input> 
+  	 <button (click)="scanBarcode()" ion-button large clear item-end><ion-icon name="camera" item-start></ion-icon></button>
+  </ion-item>  
+  
+</ion-list>
+</form>
+
+</ion-col>
+</ion-row>
+
+<ion-row no-padding>
+<ion-col>
+  <button ion-button full icon-start (click)="reset()">Clear</button>
+</ion-col>
+<ion-col>
+  <button ion-button full icon-start (click)="search()">Search</button>
+</ion-col>
+</ion-row>
+
+<ion-row no-padding>
+<ion-col>
+
+<ion-list *ngIf="isSearch">
+
+<ion-item no-lines>
+  <ion-label class="page_title">CN History</ion-label>
+</ion-item>
+
+<ion-item *ngFor="let data of reportdata">
+<p item-end class="dates">{{data.dates}}</p>
+<p item-end class="times">{{data.times}}</p>
+<p><strong>{{data.process}}</strong></p>
+<p>{{data.office}}</p>
+</ion-item>
+
+
+
+</ion-list>
+
+</ion-col>
+</ion-row>
+
+
+
+</ion-grid>
+
+</ion-content>

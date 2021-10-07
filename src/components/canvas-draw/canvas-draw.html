@@ -1,0 +1,19 @@
+ 
+<canvas #myCanvas (touchstart)="handleStart($event)" (touchmove)="handleMove($event)"></canvas>
+ 
+<ion-toolbar id="bottom-toolbar">
+
+  <ion-buttons left>
+        <button color="dark" ion-button (click)="clearCanvas()">Clear</button>
+    </ion-buttons>
+
+
+  <ion-buttons right>
+          <button color="dark" ion-button (click)="cancel()">Cancel</button>
+  
+        <button color="dark" ion-button (click)="save()">Save</button>
+    </ion-buttons>
+ 
+</ion-toolbar>
+
+<canvas #myCanvasResize [hidden]="true"></canvas>

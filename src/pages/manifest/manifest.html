@@ -1,0 +1,69 @@
+<ion-header>
+ <ion-navbar text-center>
+    <img src="assets/images/banner.png"/>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+<ion-grid margin-vertical>
+
+<ion-row no-padding>
+<ion-col>
+
+<form [formGroup]="form">
+<ion-list>
+  
+   <ion-item no-lines>
+  <p text-center class="page_title">Manifest Assigned To You</p>
+</ion-item>
+   
+ <ion-item>
+   
+    <ion-label stacked>Date</ion-label>
+  <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="cnSearch.date" formControlName="date" placeholder="Select date"></ion-datetime>
+  </ion-item>  
+  
+</ion-list>
+</form>
+
+</ion-col>
+</ion-row>
+
+<ion-row no-padding>
+<ion-col>
+  <button ion-button full icon-start (click)="reset()">Clear</button>
+</ion-col>
+<ion-col>
+  <button ion-button full icon-start (click)="search()">Search</button>
+</ion-col>
+</ion-row>
+
+<ion-row no-padding>
+<ion-col>
+
+<ion-list *ngIf="isSearch">
+
+<ion-item no-lines>
+  <ion-label class="page_title">List of Manifests</ion-label>
+</ion-item>
+
+<ion-item *ngFor="let data of reportdata" (click)="detail(data)">
+<p><strong>Manifest No : {{data.manifest_no}}</strong></p>
+<p>{{data.CN_from}} <ion-icon name="arrow-forward"></ion-icon> {{data.CN_to}}</p>
+<ion-icon name="ios-arrow-forward" item-end></ion-icon>
+
+</ion-item>
+
+
+
+</ion-list>
+
+</ion-col>
+</ion-row>
+
+
+
+</ion-grid>
+
+</ion-content>
