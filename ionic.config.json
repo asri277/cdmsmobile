@@ -1,7 +1,0 @@
-{
-  "name": "cdmsmobile",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "ionic-angular"
-}
