@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "cdmsmobile",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

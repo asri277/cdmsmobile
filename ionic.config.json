@@ -1,0 +1,7 @@
+{
+  "name": "cdmsmobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
