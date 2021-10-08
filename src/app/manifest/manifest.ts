@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController,AlertController,Platform } from 'ionic-angular';
+import { NavController,AlertController,Platform } from '@ionic-angular';
 import { AuthService } from '../../services/auth-service/auth-service';
 import { PostdataProvider } from '../../services/postdata/postdata';
 import { ConnectionProvider } from '../../services/connection/connection';

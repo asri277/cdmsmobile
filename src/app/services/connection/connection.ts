@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Platform } from 'ionic-angular';
-import { ToastController } from 'ionic-angular';
-import { AlertController,LoadingController } from 'ionic-angular';
+import { Platform } from '@ionic-angular';
+import { ToastController } from '@ionic-angular';
+import { AlertController,LoadingController } from '@ionic-angular';
 import { Http } from '@angular/http';
 
 

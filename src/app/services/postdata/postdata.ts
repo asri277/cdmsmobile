@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http,URLSearchParams } from '@angular/http';
-import { LoadingController,AlertController } from 'ionic-angular';
+import { LoadingController,AlertController } from '@ionic-angular';
 import {Database} from "../database/database";
 import { ConnectionProvider } from '../connection/connection';
 import { AuthService } from '../auth-service/auth-service';

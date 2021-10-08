@@ -1,5 +1,5 @@
 import { Component,ViewChild, ElementRef  } from '@angular/core';
-import { NavController,App,NavParams,LoadingController, Loading,AlertController,Platform } from 'ionic-angular';
+import { NavController,App,NavParams,LoadingController, Loading,AlertController,Platform } from '@ionic-angular';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Geolocation } from '@ionic-native/geolocation';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';

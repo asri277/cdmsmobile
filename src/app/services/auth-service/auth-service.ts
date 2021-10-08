@@ -4,7 +4,7 @@ import {Database} from "../database/database";
 import {ConnectionProvider} from "../connection/connection";
 import { Http,URLSearchParams } from '@angular/http';
 
-import { Platform,LoadingController } from 'ionic-angular';
+import { Platform,LoadingController } from '@ionic-angular';
 import { Storage } from '@ionic/storage';
 
 

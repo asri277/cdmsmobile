@@ -1,19 +1,19 @@
 import { Component } from '@angular/core';
-import { NavController,NavParams,Platform } from 'ionic-angular';
+import { NavController,NavParams,Platform } from '@ionic-angular';
 
 
 
 
 
 @IonicPage({
-	name: 'SignaturePage' 
+	name: 'SignaturePage'
 		})
 @Component({
   selector: 'page-signature',
   templateUrl: 'signature.html'
 })
-export class SignaturePage { 
-	
+export class SignaturePage {
+
   cnObject:any;
 unregisterBackButtonAction:any;
 
@@ -22,29 +22,29 @@ unregisterBackButtonAction:any;
 	  this.cnObject = this.navParams.get('cnObject');
 	  //alert(this.cnObject.selectStatus);
   }
-  
+
   ionViewDidLoad(){
-	 
+
   }
-  
+
   ionViewDidEnter(){
 	  this.initializeBackButtonCustomHandler();
   }
-  
-  
+
+
   ionViewDidLeave() {
 	    this.unregisterBackButtonAction && this.unregisterBackButtonAction();
 
 	}
-  
+
   initializeBackButtonCustomHandler() {
       this.unregisterBackButtonAction = this.platform.registerBackButtonAction(()=>{
     	  this.navCtrl.pop();
-      }, 2); 
-  }     
-  
- 
-  
- 
+      }, 2);
+  }
+
+
+
+
 
 }

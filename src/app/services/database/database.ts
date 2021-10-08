@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
 import {SQLite} from 'ionic-native';
-import { Platform } from 'ionic-angular';
+import { Platform } from '@ionic-angular';
 
 
 

@@ -1,5 +1,5 @@
 import { Component,ViewChild } from '@angular/core';
-import { NavController,NavParams,Tabs,AlertController,Platform} from 'ionic-angular';
+import { NavController,NavParams,Tabs,AlertController,Platform} from '@ionic-angular';
 
 
 
