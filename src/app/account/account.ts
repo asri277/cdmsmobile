@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController,App,Platform } from '@ionic-angular';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { AuthService } from '../../services/auth-service/auth-service';
-import { PostdataProvider } from '../../services/postdata/postdata';
-import { ConnectionProvider } from '../../services/connection/connection';
+import { AuthService } from '../services/auth-service/auth-service';
+import { PostdataProvider } from '../services/postdata/postdata';
+import { ConnectionProvider } from '../services/connection/connection';
 
 
 

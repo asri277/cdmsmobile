@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController, AlertController, LoadingController, Loading, IonicPage,App } from '@ionic-angular';
-import { AuthService } from '../../services/auth-service/auth-service';
-import { ConnectionProvider } from '../../services/connection/connection';
+import { AuthService } from '../services/auth-service/auth-service';
+import { ConnectionProvider } from '../services/connection/connection';
 import { Http } from '@angular/http';
-import { Platform } from 'ionic-angular';
+import { Platform } from '@ionic-angular';
 
 
 

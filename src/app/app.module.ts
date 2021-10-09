@@ -16,10 +16,10 @@ import { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-nati
 import { File } from '@ionic-native/file';
 
 
-import { AuthService } from 'services/auth-service/auth-service';
-import { Database } from 'services/database/database';
-import { ConnectionProvider } from 'services/connection/connection';
-import { PostdataProvider } from 'services/postdata/postdata';
+import { AuthService } from './services/auth-service/auth-service';
+import { Database } from './services/database/database';
+import { ConnectionProvider } from './services/connection/connection';
+import { PostdataProvider } from './services/postdata/postdata';
 
 
 @NgModule({

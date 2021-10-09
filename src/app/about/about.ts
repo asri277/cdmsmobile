@@ -4,8 +4,8 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { Geolocation } from '@ionic-native/geolocation';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { Camera, CameraOptions } from '@ionic-native/camera';
-import { ConnectionProvider } from '../../services/connection/connection';
-import { PostdataProvider } from '../../services/postdata/postdata';
+import { ConnectionProvider } from '../services/connection/connection';
+import { PostdataProvider } from '../services/postdata/postdata';
 import { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer';
 
 declare var google;

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from '@ionic-angular';
 import { SignaturePage } from './signature';
-import { CanvasDraw } from '../../components/canvas-draw/canvas-draw';
+import { CanvasDraw } from '../components/canvas-draw/canvas-draw';
 
 
 

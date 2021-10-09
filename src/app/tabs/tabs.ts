@@ -3,7 +3,7 @@ import { NavController,NavParams,Tabs,AlertController,Platform} from '@ionic-ang
 
 
 
-import { AuthService } from '../../services/auth-service/auth-service';
+import { AuthService } from '../services/auth-service/auth-service';
 
 
 @IonicPage({
